@@ -12,8 +12,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read #This is required for actions/checkout
+    run:
+       working-directory: ./frontend
 
     steps:
       - uses: actions/checkout@v4
